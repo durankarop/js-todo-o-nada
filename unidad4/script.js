@@ -31,7 +31,7 @@ if (ganeLaCarrera = true) {
 // Ejercicio 4
 var posicionEnLaCarrera = 6;
 if (posicionEnLaCarrera == 1) {
-    console.log('FELICITACIONES, SALISTE 1RO')
+    console.log('FELICITACIONES, SALISTE 1RO.')
 } else if (posicionEnLaCarrera == 2) {
     console.log('Te falto poquito para ganar.')
 } else if (posicionEnLaCarrera == 3) {
@@ -43,8 +43,21 @@ if (posicionEnLaCarrera == 1) {
 };
 
 // Ejercicio 5
+var posicionEnLaCarrera = prompt('Ingrese la posición.');
+var leyenda;
+if (posicionEnLaCarrera == 1) {
+    leyenda = 'FELICITACIONES, SALISTE 1RO.'
+} else if (posicionEnLaCarrera == 2) {
+    leyenda = 'Te faltó poquito para ganar.'
+} else if (posicionEnLaCarrera == 3) {
+    leyenda = 'Sos un orgullo para tu familia.'
+} else if (posicionEnLaCarrera > 3) {
+    leyenda = 'Volvé a tu casa.'
+} else {
+    leyenda = 'No tires fruta.'
+};
 
-
+console.log(leyenda);
 
 // Ejercicio 6
 var importeAPagar = parseInt(prompt('Ingrese el monto a abonar'));
